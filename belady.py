@@ -1,8 +1,7 @@
-# Esteban Garcia Sanchez 1088325697
 
 if __name__ == "__main__":
 
-    pages = (5, 4, 3, 2, 1, 4, 3, 5, 4, 3, 2, 1, 5)
+    pages = [5, 4, 3, 2, 1, 4, 3, 5, 4, 3, 2, 1, 5]
     faults = {3: 0, 4: 0}
 
     for frames in faults:
