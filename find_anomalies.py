@@ -21,11 +21,11 @@ def anomaly(pages):
 
 if __name__ == "__main__":
 
-    size = 13       # Tamanio de la secuencia
-    minutes = 1/4   # Duracion de la busqueda
+    size = 13       # Tamaño de la secuencia
+    minutes = 1/2   # Duración de la búsqueda
     sequences = 0   # Secuencias evaluadas
-    anomalies = 0   # Anomalias encontradas
-    repeated = 0    # Anomalias repetidas
+    anomalies = 0   # Anomalías encontradas
+    repeated = 0    # Anomalías repetidas
     file_name = "sequences.txt"
     
     try:
@@ -41,7 +41,7 @@ if __name__ == "__main__":
                 
                 if anomaly(pages):
                     pages = str(pages)              # Convertir pages de list a str
-                    if pages in data:               # Si ya esta repetida, continuar
+                    if pages in data:               # Si ya está, continuar
                         repeated += 1
                         continue
 
